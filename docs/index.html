@@ -9,23 +9,24 @@
   <canvas id="chart"></canvas>
 
   <script>
-    fetch('/metrics/metrics.json')
-      .then(res => res.json())
-      .then(data => {
-        new Chart(document.getElementById('chart'), {
-          type: 'bar',
-          data: {
-            labels: ['Problems Solved', 'Nested Loops', 'Recursion Used'],
-            datasets: [{
-              data: [
-                data.problems,
-                data.nestedLoops,
-                data.recursionUsed
-              ]
-            }]
-          }
-        });
-      });
-  </script>
-</body>
-</html>
+  const data = {
+    problems: 5,
+    nestedLoops: 2,
+    recursionUsed: 1
+  };
+
+  new Chart(document.getElementById('chart'), {
+    type: 'bar',
+    data: {
+      labels: ['Problems Solved', 'Nested Loops', 'Recursion Used'],
+      datasets: [{
+        label: 'Algo Metrics',
+        data: [
+          data.problems,
+          data.nestedLoops,
+          data.recursionUsed
+        ]
+      }]
+    }
+  });
+</script>
