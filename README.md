@@ -1,2 +1,2 @@
 # Algorithm
-DSA practice algos and practice
+DSA practice algos 
