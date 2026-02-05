@@ -9,7 +9,7 @@
   <canvas id="chart"></canvas>
 
   <script>
-    fetch('../metrics/metrics.json')
+    fetch('/metrics/metrics.json')
       .then(res => res.json())
       .then(data => {
         new Chart(document.getElementById('chart'), {
