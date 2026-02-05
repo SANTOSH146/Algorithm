@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Algorithm Progress Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>📈 Algorithm Practice Dashboard</h2>
+  <canvas id="chart"></canvas>
+
+  <script>
+    fetch('../metrics/metrics.json')
+      .then(res => res.json())
+      .then(data => {
+        new Chart(document.getElementById('chart'), {
+          type: 'bar',
+          data: {
+            labels: ['Problems Solved', 'Nested Loops', 'Recursion Used'],
+            datasets: [{
+              data: [
+                data.problems,
+                data.nestedLoops,
+                data.recursionUsed
+              ]
+            }]
+          }
+        });
+      });
+  </script>
+</body>
+</html>
