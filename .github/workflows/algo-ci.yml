@@ -2,7 +2,7 @@ name: Algo CI & Quality Check
 
 on:
   push:
-    branches: [ main ]
+    branches: [ dev ]
   pull_request:
 
   workflow_dispatch:
@@ -23,7 +23,7 @@ jobs:
 
       - name: Compile Java files
         run: |
-          find algorithms -name "*.java" > sources.txt
+          find Algorithm -name "*.java" > sources.txt
           javac @sources.txt
 
       - name: Run PMD (Code Quality)
