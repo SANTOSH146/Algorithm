@@ -34,3 +34,7 @@ class bubblesort {
         
     }
 }
+
+
+// Time = O(n2)
+// space = O(1)
