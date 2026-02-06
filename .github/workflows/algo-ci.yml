@@ -31,7 +31,7 @@ jobs:
           curl -L -o pmd.zip https://github.com/pmd/pmd/releases/download/pmd_releases/6.55.0/pmd-bin-6.55.0.zip
           unzip -q pmd.zip
           pmd-bin-6.55.0/bin/run.sh pmd \
-            -d Algorithm \
+            -d Sorting \
             -R rulesets/java/quickstart.xml \
             -f text || true
 
