@@ -23,7 +23,7 @@ jobs:
 
       - name: Compile Java files
         run: |
-          find Algorithm -name "*.java" > sources.txt
+          find Sorting -name "*.java" > sources.txt
           javac @sources.txt
 
       - name: Run PMD (Code Quality)
