@@ -1,7 +1,7 @@
 package Sorting;
 import java.util.*;
 
-class selectionSort{
+class Selectionsort{
 
     public static void swapNumbers(int i,int j,int[] arr){
         int temp=arr[i];
