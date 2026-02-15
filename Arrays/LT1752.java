@@ -32,3 +32,7 @@ public class LT1752{
     }
 
 }
+
+
+// Time complexity = O(n);
+// Space somplexity = O(1);
