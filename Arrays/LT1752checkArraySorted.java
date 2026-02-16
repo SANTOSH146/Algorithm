@@ -1,7 +1,7 @@
 package Arrays;
 import java.util.*;
 
-public class LT1752{
+public class LT1752checkArraySorted{
     public static boolean checkArraySorted(int n,int[] nums) {
         if(n==0 || n==1){
             return true;
