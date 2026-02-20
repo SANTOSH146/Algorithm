@@ -39,6 +39,7 @@ public class LT26removedDuplicatesfromSortedArray {
             System.out.print(arr[i]+" ");
             }else{
                 System.out.print("-"+" ");
+
             }
 
         }
